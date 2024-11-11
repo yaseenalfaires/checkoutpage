@@ -1,84 +1,84 @@
 <!DOCTYPE html>
 <html lang="ar">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>صفحة الدفع</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            direction: rtl;
-            background-color: #f4f4f4;
-            padding: 20px;
-        }
+    <script src="https://kit.fontawesome.com/5c7edfd842.js" crossorigin="anonymous"></script>
 
-        .container {
-            width: 100%;
-            max-width: 500px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
+    <title>نموذج الدفع</title>
 
-        h1 {
-            text-align: center;
-            font-size: 24px;
-            color: #333;
-        }
-
-        label {
-            font-size: 16px;
-            color: #555;
-            margin-bottom: 8px;
-            display: block;
-        }
-
-        input[type="text"],
-        input[type="tel"],
-        input[type="address"] {
-            width: 100%;
-            padding: 10px;
-            margin: 12px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 14px;
-        }
-
-        .submit-btn {
-            width: 100%;
-            padding: 12px;
-            background-color: #4CAF50;
-            border: none;
-            border-radius: 4px;
-            font-size: 16px;
-            color: white;
-            cursor: pointer;
-        }
-
-        .submit-btn:hover {
-            background-color: #45a049;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <header>
+        <h1>الدفع</h1>
+    </header>
 
     <div class="container">
-        <h1>إتمام عملية الدفع</h1>
-        <form action="/submit_form" method="POST">
-            <label for="name">الاسم الكامل</label>
-            <input type="text" id="name" name="name" required placeholder="أدخل اسمك">
+        <main>
+            <form action="">
 
-            <label for="phone">رقم الهاتف</label>
-            <input type="tel" id="phone" name="phone" required placeholder="أدخل رقم هاتفك">
+                <section>
+                    <h3>معلومات التواصل</h3>
 
-            <label for="address">العنوان</label>
-            <input type="text" id="address" name="address" required placeholder="أدخل عنوانك">
+                    <label for="email">البريد الإلكتروني</label>
+                    <nav class="input">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" name="email" id="email" required placeholder="أدخل بريدك الإلكتروني...">
+                    </nav>
 
-            <button type="submit" class="submit-btn">إرسال</button>
-        </form>
+                    <label for="phone">رقم الهاتف</label>
+                    <nav class="input">
+                        <i class="fas fa-phone-alt"></i>
+                        <input type="tel" name="phone" id="phone" required placeholder="أدخل رقم هاتفك...">
+                    </nav>
+                </section>
+
+                <section>
+                    <h3>عنوان الشحن</h3>
+
+                    <label for="name">الاسم الكامل</label>
+                    <nav class="input">
+                        <i class="fas fa-user"></i>
+                        <input type="text" name="name" id="name" required placeholder="أدخل اسمك الكامل...">
+                    </nav>
+
+                    <label for="address">العنوان</label>
+                    <nav class="input">
+                        <i class="fas fa-home"></i>
+                        <input type="text" name="address" id="address" required placeholder="أدخل عنوانك...">
+                    </nav>
+
+                    <label for="city">المدينة</label>
+                    <nav class="input">
+                        <i class="fas fa-city"></i>
+                        <input type="text" name="city" id="city" required placeholder="أدخل مدينتك...">
+                    </nav>
+                </section>
+
+                <section class="accept">
+                    <input type="checkbox" name="acceptBox" id="acceptBox">
+                    <label for="acceptBox">حفظ هذه المعلومات للاستخدام لاحقاً</label>
+                </section>
+
+                <div class="footer-button">
+                    <button>متابعة</button>
+                </div>
+            </form>
+        </main>
+
+        <aside>
+          
+
+            <nav class="shipping-total">
+                <p><span>المجموع</span> <span>$148.98</span></p>
+            </nav>
+        </aside>
+
     </div>
-
 </body>
+
 </html>
