@@ -1,0 +1,212 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+/* Header */
+header{
+    text-align: center;
+    margin-top: 1em;
+    height: 2em;
+    /* font-size: 1.2em; */
+}
+
+header h1{
+    letter-spacing: 0.04em;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+/* Left */
+main{
+    display: flex;
+    color: grey;
+}
+
+section{
+    margin-right: 2em;
+}
+section h3{
+    letter-spacing: 0.01em;
+    margin: 0.8em 0.3em;
+    color: #504c4c;
+}
+
+section label{
+    margin-left: 0.4em;
+    padding: 0.2em;
+    font-size: 0.8em;
+}
+
+.input{
+    border: 1px solid #a49595;
+    border-radius: 0.3em;
+    height: 2em;
+    margin: 0.4em;
+}
+
+.input:focus-within{
+    border: 1px solid black; /* tıklandığında border ı sabitler */
+}
+
+nav input{
+    border: none;
+    outline: 0em;
+    vertical-align: middle;
+    width: 80%;
+}
+
+.input i{
+    vertical-align:middle;
+    padding: 5px;
+}
+
+.country-post{
+    display: inline-block;
+}
+
+.country-post nav{
+    border: 1px solid #a49595;
+    border-radius: 0.3em;
+    height: 2em;
+    margin: 0.4em;
+    vertical-align:middle;
+    padding: 5px;
+}
+
+.country-post nav:hover{
+    border-color: black;
+}
+
+select{
+    outline: 0px;
+    border: none;
+}
+
+.accept{
+    padding: 0.5em;
+}
+
+.accept:hover{
+    color: black;
+}
+
+.footer-button{
+    text-align: center;
+    margin-bottom: 1em;
+    position: relative;
+    left: 50%;
+    
+}
+
+.footer-button button{
+    width: 6em;
+    height: 3em;
+    border: none;
+    border-radius: 1em;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+}
+
+.footer-button button:hover{
+    border: 2px dotted rgb(235, 102, 54);
+    width: 6.2em;
+}
+
+/* Right */
+
+aside{
+    background-color: #EEEEEE;
+    width: 20em;
+    height: 23em;
+    border-radius: 10px;
+    margin-top: 3em;
+    color: #4e5150;
+}
+
+ aside img{
+    height: 7em;
+    width: 6em;
+    border-radius: 0.8em;
+    
+}
+
+aside h3{
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+aside button{
+    background-color: #E0E0E0;
+    border-color: white;
+    /* padding: 0.03em; */
+    border-radius: 0.3em;
+    cursor: pointer;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+}
+
+aside .image-box{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price{
+margin-left: 2em;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+   
+}
+
+.quantitly{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #888888;
+    border-radius: 0.3em;
+    width: 6.5em;
+    height: 2.2em;
+    padding: 0.4em;
+}
+
+.quantitly:hover{
+    background-color:#888888;
+    color: white;
+}
+
+.shipping-total{
+    border-top: 1px solid black;
+    margin: 1em 2em;
+}
+
+.shipping-total p{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width : 769px){
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .footer-button{
+        left: 0;
+        margin: 1em;
+    }
+
+    form{
+        margin-top: 2em;
+    }
+}
